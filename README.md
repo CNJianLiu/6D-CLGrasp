@@ -1,5 +1,5 @@
-# SGPA: Structure-Guided Prior Adaptation for Category-Level 6D Object Pose Estimation
-This is the PyTorch implemention of ICCV'21 paper **[SGPA: Structure-Guided Prior Adaptation for Category-Level 6D Object Pose Estimation](https://openaccess.thecvf.com/content/ICCV2021/papers/Chen_SGPA_Structure-Guided_Prior_Adaptation_for_Category-Level_6D_Object_Pose_Estimation_ICCV_2021_paper.pdf)** by Kai Chen and [Qi Dou](http://www.cse.cuhk.edu.hk/~qdou/).
+# Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation
+This is the PyTorch implemention of ICCV'21 paper **[SGPA: Structure-Guided Prior Adaptation for Category-Level 6D Object Pose Estimation](https://openaccess.thecvf.com/content/ICCV2021/papers/Chen_SGPA_Structure-Guided_Prior_Adaptation_for_Category-Level_6D_Object_Pose_Estimation_ICCV_2021_paper.pdf)** by Jian Liu et al.
 
 <p align="center">
 <img src="images/teaser.png" alt="intro" width="100%"/>
@@ -69,7 +69,7 @@ python pose_data.py
 ```
 
 ## Evaluation
-Please download our trained model [here](https://drive.google.com/file/d/1drBp3naBrNdazah1zTdgydjchE-LysdI/view?usp=sharing) and put it in the 'SGPA/model' directory. Then, you can have a quick evaluation on the REAL275 dataset using the following command.
+Please download our trained model [here](https://drive.google.com/file/d/1drBp3naBrNdazah1zTdgydjchE-LysdI/view?usp=sharing) and put it in the '6D-CLGrasp/train_results/CAMERA' or '6D-CLGrasp/train_results/REAL' directory. Then, you can have a quick evaluation on the CAMERA25 and REAL275 datasets using the following command.
 ```bash
 bash eval.sh
 ```
@@ -98,5 +98,6 @@ Any questions, please feel free to contact Jian Liu (jianliu@hnu.edu.cn).
 ## Acknowledgment
 Our code is developed based on the following repositories. We thank the authors for releasing the codes.
 - [SGPA](https://github.com/leo94-hk/SGPA)
+- [SPD](https://github.com/mentian/object-posenet)
 - [MHFormer](https://github.com/Vegetebird/MHFormer)
 - [Pointnet2.PyTorch](https://github.com/sshaoshuai/Pointnet2.PyTorch)
