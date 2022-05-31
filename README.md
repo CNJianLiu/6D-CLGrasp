@@ -76,6 +76,11 @@ bash eval.sh
 
 ## Train
 In order to train the model, remember to download the complete dataset, organize and preprocess the dataset properly at first.
+```
+# optional - train an Autoencoder from scratch and prepare the shape priors
+python train_ae.py
+python mean_shape.py
+```
 
 train.py is the main file for training. You can simply start training using the following command.
 ```bash
