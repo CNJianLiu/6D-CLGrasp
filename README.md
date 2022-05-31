@@ -11,13 +11,14 @@ This is the PyTorch implemention of our paper published in <b>IEEE Transactions 
 ## Citation
 If you find the code useful, please cite our paper.
 ```latex
-@inproceedings{chen2021sgpa,
-  title={Sgpa: Structure-guided prior adaptation for category-level 6d object pose estimation},
-  author={Chen, Kai and Dou, Qi},
-  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
-  pages={2773--2782},
-  year={2021}
+@article{TII2022,
+  author={Liu, Jian and Sun, Wei and Liu, Chongpei and Zhang, Xing and Fu, Qiang},
+  journal={IEEE Transactions on Industrial Informatics},
+  title={Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation},
+  year={2022},
+  publisher={IEEE}
 }
+
 ```
 Any questions, please feel free to contact Jian Liu (jianliu@hnu.edu.cn).
 
