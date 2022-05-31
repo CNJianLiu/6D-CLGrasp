@@ -38,19 +38,36 @@ python setup.py install
 ```
 
 ## Dataset
-Download camera_train, camera_val, real_train, real_test, ground-truth annotations and mesh models provided by NOCS.
+Download [camera_train](http://download.cs.stanford.edu/orion/nocs/camera_train.zip), [camera_val](http://download.cs.stanford.edu/orion/nocs/camera_val25K.zip),
+[real_train](http://download.cs.stanford.edu/orion/nocs/real_train.zip), [real_test](http://download.cs.stanford.edu/orion/nocs/real_test.zip),
+[ground-truth annotations](http://download.cs.stanford.edu/orion/nocs/gts.zip),
+and [mesh models](http://download.cs.stanford.edu/orion/nocs/obj_models.zip)
+provided by [NOCS](https://github.com/hughw19/NOCS_CVPR2019).<br/>
+Unzip and organize these files in 6D-CLGrasp/data as follows:
+```
+data
+├── CAMERA
+│   ├── train
+│   └── val
+├── Real
+│   ├── train
+│   └── test
+├── gts
+│   ├── val
+│   └── real_test
+└── obj_models
+    ├── train
+    ├── val
+    ├── real_train
+    └── real_test
+```
+Run python scripts to prepare the datasets.
+```
+cd 6D-CLGrasp/preprocess
+python shape_data.py
+python pose_data.py
+```
 
-Then, organize and preprocess these files following [SPD](https://github.com/mentian/object-deformnet). For a quick evaluation, we provide the processed testing data for REAL275. You can download it [here](https://www.dropbox.com/s/7ylvilbwznme9cl/dataset.zip?dl=0) and organize the testing data as follows:
-```
-6D-CLGrasp
-├── data
-│   └── Real
-│       ├──test
-│       └──test_list.txt
-└── results
-    └── mrcnn_results
-        └──real_test
-```
 ## Evaluation
 Please download our trained model [here](https://drive.google.com/file/d/1drBp3naBrNdazah1zTdgydjchE-LysdI/view?usp=sharing) and put it in the 'SGPA/model' directory. Then, you can have a quick evaluation on the REAL275 dataset using the following command.
 ```bash
