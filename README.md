@@ -9,13 +9,11 @@ This is the PyTorch implemention of ICCV'21 paper **[SGPA: Structure-Guided Prio
 > Category-level 6D object pose estimation aims to predict the position and orientation for unseen objects, which plays a pillar role in many scenarios such as robotics and augmented reality. The significant intra-class variation is the bottleneck challenge in this task yet remains unsolved so far. In this paper, we take advantage of category prior to overcome this problem by innovating a structure-guided prior adaptation scheme to accurately estimate 6D pose for individual objects. Different from existing prior based methods, given one object and its corresponding category prior, we propose to leverage their structure similarity to dynamically adapt the prior to the observed object. The prior adaptation intrinsically associates the adopted prior with different objects, from which we can accurately reconstruct the 3D canonical model of the specific object for pose estimation. To further enhance the structure characteristic of objects, we extract low-rank structure points from the dense object point cloud, therefore more efficiently incorporating sparse structural information during prior adaptation. Extensive experiments on CAMERA25 and REAL275 benchmarks demonstrate significant performance improvement.
 
 ## Installation
-- Our code has been tested with
+Our code has been tested with
 - Ubuntu 20.04
 - Python 3.8
 - CUDA 11.0
 - PyTorch 1.8.0
-
-**Conda virtual environment**
 
 We recommend using conda to setup the environment.
 
@@ -82,6 +80,6 @@ Any questions, please feel free to contact Jian Liu (jianliu@hnu.edu.cn).
 
 ## Acknowledgment
 Our code is developed based on the following repositories. We thank the authors for releasing the codes.
--[SGPA](https://github.com/leo94-hk/SGPA)
--[MHFormer](https://github.com/Vegetebird/MHFormer)
--[Pointnet2.PyTorch](https://github.com/sshaoshuai/Pointnet2.PyTorch)
+- [SGPA](https://github.com/leo94-hk/SGPA)
+- [MHFormer](https://github.com/Vegetebird/MHFormer)
+- [Pointnet2.PyTorch](https://github.com/sshaoshuai/Pointnet2.PyTorch)
