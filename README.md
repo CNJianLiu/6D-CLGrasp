@@ -77,7 +77,7 @@ bash eval.sh
 ## Train
 In order to train the model, remember to download the complete dataset, organize and preprocess the dataset properly at first.
 ```
-# optional - train an Autoencoder from scratch and prepare the shape priors
+# optional - train the GSENet and to get the global shapes (the pretrained global shapes can be found in 6D-CLGrasp/assets1)
 python train_ae.py
 python mean_shape.py
 ```
