@@ -1,5 +1,5 @@
 # Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation
-This is the PyTorch implemention of our paper published in <b>IEEE Transactions on Industrial Informatics</b> **[Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation]()** by J. Liu, W. Sun, C. Liu, X. Zhang, and Q. Fu.
+This is the PyTorch implemention of our paper **[Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation]()** published in <b>*IEEE Transactions on Industrial Informatics*</b> by J. Liu, W. Sun, C. Liu, X. Zhang, and Q. Fu.
 
 <p align="center">
 <img src="images/teaser.png" alt="intro" width="100%"/>
@@ -107,3 +107,7 @@ Our code is developed based on the following repositories. We thank the authors 
 - [SPD](https://github.com/mentian/object-posenet)
 - [MHFormer](https://github.com/Vegetebird/MHFormer)
 - [Pointnet2.PyTorch](https://github.com/sshaoshuai/Pointnet2.PyTorch)
+
+## Licence
+
+This project is licensed under the terms of the MIT license.
