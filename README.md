@@ -2,7 +2,7 @@
 This is the PyTorch implemention of paper **[Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation]()** published in <b>*IEEE Transactions on Industrial Informatics*</b> by J. Liu, W. Sun, C. Liu, X. Zhang, and Q. Fu.
 
 <p align="center">
-<img src="images/teaser.png" alt="intro" width="100%"/>
+<img src="images/Fig0.png" alt="intro" width="100%"/>
 </p>
 
 ## Grasping Demo
