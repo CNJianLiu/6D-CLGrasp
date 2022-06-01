@@ -1,9 +1,11 @@
 # Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation
-This is the PyTorch implemention of our paper **[Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation]()** published in <b>*IEEE Transactions on Industrial Informatics*</b> by J. Liu, W. Sun, C. Liu, X. Zhang, and Q. Fu.
+This is the PyTorch implemention of paper **[Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation]()** published in <b>*IEEE Transactions on Industrial Informatics*</b> by J. Liu, W. Sun, C. Liu, X. Zhang, and Q. Fu.
 
 <p align="center">
 <img src="images/teaser.png" alt="intro" width="100%"/>
 </p>
+
+## Demo
 
 ## Abstract
 > Category-level 6D object pose estimation aims to predict the position and orientation for unseen objects, which plays a pillar role in many scenarios such as robotics and augmented reality. The significant intra-class variation is the bottleneck challenge in this task yet remains unsolved so far. In this paper, we take advantage of category prior to overcome this problem by innovating a structure-guided prior adaptation scheme to accurately estimate 6D pose for individual objects. Different from existing prior based methods, given one object and its corresponding category prior, we propose to leverage their structure similarity to dynamically adapt the prior to the observed object. The prior adaptation intrinsically associates the adopted prior with different objects, from which we can accurately reconstruct the 3D canonical model of the specific object for pose estimation. To further enhance the structure characteristic of objects, we extract low-rank structure points from the dense object point cloud, therefore more efficiently incorporating sparse structural information during prior adaptation. Extensive experiments on CAMERA25 and REAL275 benchmarks demonstrate significant performance improvement.
