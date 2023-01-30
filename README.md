@@ -83,7 +83,7 @@ python pose_data.py
 ```
 
 ## Evaluation
-You can download our pretrained models [here](https://drive.google.com/file/d/1drBp3naBrNdazah1zTdgydjchE-LysdI/view?usp=sharing) and put them in the '6D-CLGrasp/train_results/CAMERA' and the '6D-CLGrasp/train_results/REAL' directory, respectively. Then, you can have a quick evaluation on the CAMERA25 and REAL275 datasets using the following command.
+You can download our pretrained models [camera]() [real]() and put them in the '6D-CLGrasp/train_results/CAMERA' and the '6D-CLGrasp/train_results/REAL' directory, respectively. Then, you can have a quick evaluation on the CAMERA25 and REAL275 datasets using the following command.
 ```bash
 bash eval.sh
 ```
