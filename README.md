@@ -83,7 +83,7 @@ python pose_data.py
 ```
 
 ## Evaluation
-You can download our pretrained models ([camera](https://drive.google.com/file/d/1bkrA71f2d0xnrIMQefEEkjNL4_e5pi_I/view?usp=share_link), [real](https://drive.google.com/file/d/1MXMHr4YoWrlBxVaf6xnCRFzxCTCtTAqa/view?usp=sharing)) and put them in the '6D-CLGrasp/train_results/CAMERA' and the '6D-CLGrasp/train_results/REAL' directory, respectively. Then, you can have a quick evaluation on the CAMERA25 and REAL275 datasets using the following command. (BTW, maskrcnn_results can be download from [SPD](https://github.com/mentian/object-posenet))
+You can download our pretrained models ([camera](https://drive.google.com/file/d/1bkrA71f2d0xnrIMQefEEkjNL4_e5pi_I/view?usp=share_link), [real](https://drive.google.com/file/d/1MXMHr4YoWrlBxVaf6xnCRFzxCTCtTAqa/view?usp=sharing)) and put them in '6D-CLGrasp/train_results/CAMERA' and '6D-CLGrasp/train_results/REAL' directories, respectively. Then, you can have a quick evaluation on the CAMERA25 and REAL275 datasets using the following command. (BTW, maskrcnn_results can be download from [SPD](https://github.com/mentian/object-posenet))
 ```bash
 bash eval.sh
 ```
