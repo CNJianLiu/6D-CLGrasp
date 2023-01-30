@@ -1,28 +1,26 @@
-# Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation
-This is the PyTorch implemention of paper **[Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation]()** published in <b>*IEEE Transactions on Industrial Informatics*</b> by J. Liu, W. Sun, C. Liu, X. Zhang, and Q. Fu.
+# Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation
+This is the PyTorch implemention of paper **[Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation]()** published in <b>*IEEE Transactions on Industrial Informatics*</b> by J. Liu, W. Sun, C. Liu, X. Zhang, and Q. Fu.
 
 <p align="center">
 <img src="images/Fig0.png" alt="intro" width="100%"/>
 </p>
 
 ## Grasping Demo
-[https://youtu.be/zAwgzY_6JNA](https://youtu.be/zAwgzY_6JNA)
+[https://youtu.be/ZeGN6_DChuA](https://youtu.be/ZeGN6_DChuA)
 ## Abstract
-> Category-level 6D object pose estimation aims to predict the position and orientation for unseen objects, which plays a pillar role in many scenarios such as robotics and augmented reality. The significant intra-class variation is the bottleneck challenge in this task yet remains unsolved so far. In this paper, we take advantage of category prior to overcome this problem by innovating a structure-guided prior adaptation scheme to accurately estimate 6D pose for individual objects. Different from existing prior based methods, given one object and its corresponding category prior, we propose to leverage their structure similarity to dynamically adapt the prior to the observed object. The prior adaptation intrinsically associates the adopted prior with different objects, from which we can accurately reconstruct the 3D canonical model of the specific object for pose estimation. To further enhance the structure characteristic of objects, we extract low-rank structure points from the dense object point cloud, therefore more efficiently incorporating sparse structural information during prior adaptation. Extensive experiments on CAMERA25 and REAL275 benchmarks demonstrate significant performance improvement.
+> Robotic grasping is one of the key functions for realizing industrial automation and human-machine interaction. However, current robotic grasping methods for unknown objects mainly focus on generating the 6D grasp poses, which cannot obtain rich object pose information and are not robust in challenging scenes. Based on this, we propose a robotic continuous grasping system that achieves end-to-end robotic grasping of intra-class unknown objects in 3D space by accurate category-level 6D object pose estimation. Specifically, to achieve object pose estimation, first, we propose a global shape extraction network (GSENet) based on ResNet1D to extract the global shape of an object category from the 3D models of intra-class known objects. Then, with the global shape as the prior feature, we propose a transformer-guided network to reconstruct the shape of intra-class unknown object. The proposed network can effectively introduce internal and mutual communication between the prior feature, current feature, and their difference feature. The internal communication is performed by self-attention. The mutual communication is performed by cross-attention to strengthen their correlation. To achieve robotic grasping for multiple objects, we propose a low-computation and effective grasping strategy based on the pre-defined vector orientation, and develop a GUI for monitoring and control. Experiments on two benchmark datasets demonstrate that our system achieves state-of-the-art (SOTA) 6D pose estimation accuracy. Moreover, the real-world experiments show that our system also achieves superior robotic grasping performance, with a grasping success rate of 81.6% for multiple objects.
 
 ## Citation
 If you find the code useful, please cite our paper.
 ```latex
-@article{TII2022,
+@article{TII2023,
   author={Liu, Jian and Sun, Wei and Liu, Chongpei and Zhang, Xing and Fu, Qiang},
   journal={IEEE Transactions on Industrial Informatics},
   title={Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation},
-  year={2022},
+  year={2023},
   publisher={IEEE}
 }
-
 ```
-Any questions, please feel free to contact Jian Liu (jianliu@hnu.edu.cn).
 
 ## Installation
 Our code has been tested with
@@ -38,7 +36,7 @@ If you have already installed conda, please use the following commands.
 ```bash
 conda create -n CLGrasp python=3.8
 conda activate CLGrasp
-pip install ...
+conda install ...
 ```
 **Build PointNet++**
 
