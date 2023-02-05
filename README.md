@@ -103,10 +103,8 @@ bash train.sh
 
 ## Acknowledgment
 Our code is developed based on the following repositories. We thank the authors for releasing the codes.
-- [SGPA](https://github.com/leo94-hk/SGPA)
-- [SPD](https://github.com/mentian/object-posenet)
-- [MHFormer](https://github.com/Vegetebird/MHFormer)
-- [Pointnet2.PyTorch](https://github.com/sshaoshuai/Pointnet2.PyTorch)
+- [SGPA](https://github.com/leo94-hk/SGPA) - [SPD](https://github.com/mentian/object-posenet)
+- [MHFormer](https://github.com/Vegetebird/MHFormer) - [Pointnet2.PyTorch](https://github.com/sshaoshuai/Pointnet2.PyTorch)
 
 ## Licence
 
