@@ -1,5 +1,5 @@
 # Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation
-This is the PyTorch implemention of paper **[Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation](https://ieeexplore.ieee.org/document/10043016)** published in <b>*IEEE Transactions on Industrial Informatics*</b> by J. Liu, W. Sun, C. Liu, X. Zhang, and Q. Fu.
+This is the PyTorch implemention of paper **[Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation](https://ieeexplore.ieee.org/document/10043016)** published in <b>*IEEE Transactions on Industrial Informatics*</b> by <a href="https://scholar.google.com.hk/citations?user=IM-ScJoAAAAJ&hl=zh-CN&oi=ao">J. Liu</a>, W. Sun, C. Liu, X. Zhang, and <a href="https://scholar.google.com.hk/citations?user=-FwJwKMAAAAJ&hl=zh-CN&oi=ao">Q. Fu</a>.
 
 <p align="center">
 <img src="images/Fig0.JPG" alt="intro" width="100%"/>
