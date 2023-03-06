@@ -16,7 +16,7 @@ If you find the code useful, please cite our paper.
 @article{TII2023,
   author={Liu, Jian and Sun, Wei and Liu, Chongpei and Zhang, Xing and Fu, Qiang},
   journal={IEEE Transactions on Industrial Informatics},
-  title={Real-Time Multi-Object Robotic Grasping System by Shape Transformer-Guided Category-Level 6D Pose Estimation},
+  title={Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation},
   year={2023},
   publisher={IEEE},
   doi={10.1109/TII.2023.3244348}
