@@ -1,5 +1,5 @@
 # Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation
-This is the PyTorch implemention of paper **[Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation](https://ieeexplore.ieee.org/document/10043016)** published in <b>*IEEE Transactions on Industrial Informatics*</b> by <a href="https://cnjliu.github.io/">J. Liu</a>, W. Sun, C. Liu, X. Zhang, and <a href="https://scholar.google.com.hk/citations?user=-FwJwKMAAAAJ&hl=zh-CN&oi=ao">Q. Fu</a>.
+This is the PyTorch implementation of paper **[Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation](https://ieeexplore.ieee.org/document/10043016)** published in <b>*IEEE Transactions on Industrial Informatics*</b> by <a href="https://cnjliu.github.io/">J. Liu</a>, W. Sun, C. Liu, X. Zhang, and <a href="https://scholar.google.com.hk/citations?user=-FwJwKMAAAAJ&hl=zh-CN&oi=ao">Q. Fu</a>.
 
 <p align="center">
 <img src="images/Fig0.JPG" alt="intro" width="100%"/>
@@ -7,21 +7,6 @@ This is the PyTorch implemention of paper **[Robotic Continuous Grasping System 
 
 ## Grasping Demo
 [https://www.bilibili.com/video/BV16M4y1Q7CD](https://www.bilibili.com/video/BV16M4y1Q7CD) or [https://youtu.be/ZeGN6_DChuA](https://youtu.be/ZeGN6_DChuA)
-## Abstract
-> Robotic grasping is one of the key functions for realizing industrial automation and human-machine interaction. However, current robotic grasping methods for unknown objects mainly focus on generating the 6D grasp poses, which cannot obtain rich object pose information and are not robust in challenging scenes. Based on this, we propose a robotic continuous grasping system that achieves end-to-end robotic grasping of intra-class unknown objects in 3D space by accurate category-level 6D object pose estimation. Specifically, to achieve object pose estimation, first, we propose a global shape extraction network (GSENet) based on ResNet1D to extract the global shape of an object category from the 3D models of intra-class known objects. Then, with the global shape as the prior feature, we propose a transformer-guided network to reconstruct the shape of intra-class unknown object. The proposed network can effectively introduce internal and mutual communication between the prior feature, current feature, and their difference feature. The internal communication is performed by self-attention. The mutual communication is performed by cross-attention to strengthen their correlation. To achieve robotic grasping for multiple objects, we propose a low-computation and effective grasping strategy based on the pre-defined vector orientation, and develop a GUI for monitoring and control. Experiments on two benchmark datasets demonstrate that our system achieves state-of-the-art (SOTA) 6D pose estimation accuracy. Moreover, the real-world experiments show that our system also achieves superior robotic grasping performance, with a grasping success rate of 81.6% for multiple objects.
-
-## Citation
-If you find the code useful, please cite our paper.
-```latex
-@article{TII2023,
-  author={Liu, Jian and Sun, Wei and Liu, Chongpei and Zhang, Xing and Fu, Qiang},
-  journal={IEEE Transactions on Industrial Informatics},
-  title={Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation},
-  year={2023},
-  publisher={IEEE},
-  doi={10.1109/TII.2023.3244348}
-}
-```
 
 ## Installation
 Our code has been tested with
@@ -100,6 +85,18 @@ python mean_shape.py
 train.py is the main file for training. You can simply start training using the following command.
 ```bash
 bash train.sh
+```
+## Citation
+If you find the code useful, please cite our paper.
+```latex
+@article{TII2023,
+  author={Liu, Jian and Sun, Wei and Liu, Chongpei and Zhang, Xing and Fu, Qiang},
+  journal={IEEE Transactions on Industrial Informatics},
+  title={Robotic Continuous Grasping System by Shape Transformer-Guided Multi-Object Category-Level 6D Pose Estimation},
+  year={2023},
+  publisher={IEEE},
+  doi={10.1109/TII.2023.3244348}
+}
 ```
 
 ## Acknowledgment
